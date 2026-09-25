@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Feliz Cumpleaños, Mi Amor 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css?v=13.0">
+</head>
+
+<body class="theme-rose">
+    <!-- Touch Trail Container -->
+    <div id="touch-trail-container"></div>
+
+    <!-- Main Container -->
+    <main class="love-app-container">
+
+        <!-- ★★★ INTERACTION 1: GERBERA BOUQUET WITH SECRET NOTE ★★★ -->
+        <section class="bouquet-section" id="bouquet-section"
+            style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <h2 class="section-label" style="max-width: 340px; margin: 0 auto;">
+                <i class="fa-solid fa-seedling"></i> Toca el ramo para abrir la nota secreta
+            </h2>
+
+            <div class="bouquet-wrapper" id="bouquet-interactive" style="margin: 0 auto;">
+                <!-- Bouquet container -->
+                <div class="bouquet-container" style="margin: 0 auto;">
+                    <!-- Paper backing fan behind flowers -->
+                    <div class="bouquet-paper-back"></div>
+
+                    <!-- 6 Gerbera flowers arranged in a round floral dome -->
+                    <div class="gerberas-cluster">
+                        <div class="gerbera flower-1">
+                            <div class="gerbera-head"></div>
+                        </div>
+                        <div class="gerbera flower-2">
+                            <div class="gerbera-head"></div>
+                        </div>
+                        <div class="gerbera flower-3">
+                            <div class="gerbera-head"></div>
+                        </div>
+                        <div class="gerbera flower-4">
+                            <div class="gerbera-head"></div>
+                        </div>
+                        <div class="gerbera flower-5">
+                            <div class="gerbera-head"></div>
+                        </div>
+                        <div class="gerbera flower-6">
+                            <div class="gerbera-head"></div>
+                        </div>
+                    </div>
+
+                    <!-- Real cone wrapping paper -->
+                    <div class="bouquet-paper-wrap">
+                        <div class="paper-fold-left"></div>
+                        <div class="paper-fold-right"></div>
+                        <div class="paper-cone-body"></div>
+                        <div class="wrap-ribbon"></div>
+                        <div class="ribbon-bow">
+                            <div class="bow-loop bow-left"></div>
+                            <div class="bow-loop bow-right"></div>
+                            <div class="bow-knot"></div>
+                        </div>
+                    </div>
+
+                    <!-- Sparkle hint -->
+                    <div class="bouquet-tap-hint" id="bouquet-hint">
+                        <i class="fa-solid fa-hand-pointer"></i>
+                        <span>Tócame</span>
+                    </div>
+                </div>
+
+                <!-- Hidden Note Card (revealed on tap) -->
+                <div class="bouquet-note-card" id="bouquet-note" style="max-width: 340px; margin: 0 auto;">
+                    <div class="note-sparkles">✨💐✨</div>
+                    <p class="note-text font-calligraphy">
+                        Cada pétalo de estas flores representa un sentimiento puro e infinito que no puedo expresarte
+                        con palabras
+                    </p>
+                    <div class="note-hearts">💖🌸💖</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ★★★ INTERACTION 2: SCRATCH CARD TO REVEAL SECRET MESSAGE ★★★ -->
+        <section class="scratch-section" id="scratch-section"
+            style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <div class="scratch-header" style="max-width: 360px; width: 100%; margin: 0 auto;">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span>Raspa con tu dedito para descubrir tu mensaje secreto</span>
+            </div>
+
+            <div class="scratch-card-wrapper" style="width: 360px; max-width: 100%; margin: 0 auto;">
+                <div class="scratch-revealed-msg" id="scratch-message">
+                    <p class="revealed-text font-calligraphy">
+                        A kilómetros de ti, pero con el corazón abrazándote todos los días.<br>
+                        Eres mi lugar favorito ❤️<br>
+                        ¡Te quiero mucho mi florecita hermosa!
+                    </p>
+                    <span class="revealed-emoji">💖</span>
+                </div>
+                <canvas id="scratch-canvas" class="scratch-canvas" width="360" height="220"></canvas>
+                <div class="scratch-progress-bar">
+                    <div class="scratch-progress-fill" id="scratch-fill"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ★★★ INTERACTION 3: BLOW THE CANDLE (MIC OR TOUCH) ★★★ -->
+        <section class="cake-focus-section" id="cake-section">
+            <h2 class="section-label">
+                <i class="fa-solid fa-wind"></i> Ahora quiero que cierres tus ojitos, pienses en tu deseo y toques la
+                velita
+            </h2>
+
+            <div class="romantic-cake-wrapper" id="cake-interactive">
+                <div class="heart-smoke-container" id="heart-smoke">
+                    <span>💖</span><span>💕</span><span>✨</span>
+                </div>
+                <div class="candle-assembly">
+                    <div class="flame-halo" id="candle-flame">
+                        <div class="flame-inner"></div>
+                    </div>
+                    <div class="candle-body">
+                        <div class="pink-stripes"></div>
+                    </div>
+                </div>
+                <div class="cake-structure">
+                    <div class="glaze-top">
+                        <div class="drip"></div>
+                        <div class="drip"></div>
+                        <div class="drip"></div>
+                        <div class="drip"></div>
+                        <div class="drip"></div>
+                    </div>
+                    <div class="cake-tier tier-top">
+                        <span class="heart-decoration">❤️</span>
+                        <span class="heart-decoration">✨</span>
+                        <span class="heart-decoration">💖</span>
+                    </div>
+                    <div class="cake-tier tier-middle"></div>
+                    <div class="cake-tier tier-bottom"></div>
+                    <div class="silver-plate"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ★★★ INTERACTION 4: SECRET LOVE LETTER ★★★ -->
+        <section class="letter-focus-section" id="letter-section">
+            <div class="envelope-wrapper" id="envelope-interactive">
+                <div class="envelope" id="envelope-element">
+                    <div class="envelope-flap"></div>
+                    <div class="wax-seal" id="wax-seal">
+                        <i class="fa-solid fa-heart"></i>
+                        <span class="seal-tap-label">ABRIR</span>
+                    </div>
+                    <div class="envelope-pocket"></div>
+                    <div class="letter-card" id="letter-card">
+                        <div class="letter-header">
+                            <span class="date-stamp" id="display-date">25 de Septiembre</span>
+                            <i class="fa-solid fa-heart-pulse love-icon"></i>
+                        </div>
+                        <h2 class="letter-recipient font-love" id="display-recipient">¡Feliz Cumpleaños, Mi Florecita
+                            Hermosa! 💕
+                        </h2>
+                        <div class="letter-body">
+                            <div id="display-letter-text">
+                                <p>Hola Chaparrita 🤭</p>
+                                <p>Hoy es un día muy especial, porque celebramos la llegada de mi personita favorita que
+                                    transformó mi mundo. Feliz Cumpleaños, florecita. Quiero que hoy te sientas como lo
+                                    que eres: única, valiosa y absolutamente amada, quiero que recuerdes lo mucho que
+                                    significas para mí y para todas las personas que te queremos.</p>
+                                <p>Gracias por ser la luz de mis días oscuros, la calma en mis tormentas y la razón de
+                                    volver a sonreír. Eres lo que más le he pedido a la vida, eres mi refugio y mi
+                                    alegría.</p>
+                                <p>Hoy y siempre, prometo celebrar a la hermosa persona que eres, prometo apoyarte,
+                                    estar contigo siempre y hacerte sentir amada y que me importas mucho. Este
+                                    cumpleaños no es solo tuyo, también es una celebración de todo lo que representas en
+                                    mi vida.</p>
+                                <p>¡Feliz cumpleaños, mi florecita! Con todo mi corazón te deseo un año más lleno de
+                                    aventuras, magia y sobre todo lleno de amor.</p>
+                            </div>
+                        </div>
+                        <div class="letter-signature">
+                            <span>Con todo mi corazon,</span>
+                            <strong id="display-sender">Quien te piensa a la distancia J.M.❤️</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="app-footer">
+            <p>Hecho con amor para ti ❤️</p>
+        </footer>
+    </main>
+
+    <!-- SETTINGS MODAL -->
+    <div class="modal-overlay" id="settings-modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-sliders"></i> Personalizar</h3>
+                <button class="close-modal-btn" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="input-scratch-msg">Mensaje Raspadita:</label>
+                    <input type="text" id="input-scratch-msg"
+                        value="A kilómetros de ti, pero con el corazón abrazándote todos los días. Eres mi lugar favorito ❤ ¡Te quiero mucho mi florecita hermosa!">
+                </div>
+                <div class="form-group">
+                    <label for="input-recipient">Destinatario Carta:</label>
+                    <input type="text" id="input-recipient" value="¡Feliz Cumpleaños, Mi Amor! 💕">
+                </div>
+                <div class="form-group">
+                    <label for="input-letter">Dedicatoria:</label>
+                    <textarea id="input-letter"
+                        rows="8">Hola Chaparrita 🤭
+Hoy es un día muy especial, porque celebramos la llegada de mi personita favorita que transformó mi mundo. Feliz Cumpleaños, florecita. Quiero que hoy te sientas como lo que eres: única, valiosa y absolutamente amada, quiero que recuerdes lo mucho que significas para mí y para todas las personas que te queremos.
+
+Gracias por ser la luz de mis días oscuros, la calma en mis tormentas y la razón de volver a sonreír. Eres lo que más le he pedido a la vida, eres mi refugio y mi alegría.
+
+Hoy y siempre, prometo celebrar a la hermosa persona que eres, prometo apoyarte, estar contigo siempre y hacerte sentir amada y que me importas mucho. Este cumpleaños no es solo tuyo, también es una celebración de todo lo que representas en mi vida.
+
+¡Feliz cumpleaños, mi florecita! Con todo mi corazón te deseo un año más lleno de aventuras, magia y sobre todo lleno de amor.</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="input-sender">De parte de:</label>
+                    <input type="text" id="input-sender" value="Tu persona especial ❤️">
+                </div>
+                <div class="form-group">
+                    <label>Tema:</label>
+                    <div class="theme-buttons">
+                        <button class="theme-pick-btn active" data-theme="theme-rose"
+                            style="background:#ff4081;">Rosa</button>
+                        <button class="theme-pick-btn" data-theme="theme-sunset"
+                            style="background:#ff9800;">Atardecer</button>
+                        <button class="theme-pick-btn" data-theme="theme-cosmic"
+                            style="background:#ab47bc;">Violeta</button>
+                        <button class="theme-pick-btn" data-theme="theme-passion"
+                            style="background:#ff1744;">Pasión</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-save" id="save-settings-btn">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/app.js?v=4.0"></script>
+</body>
+
+</html>
